@@ -1,0 +1,31 @@
+.title {
+    color: #000000;
+    font-weight: 700;
+    line-height: 56px;
+    &_fz48 {
+        font-size: 48px;
+    }
+    &_fz36 {
+        font-size: 36px;
+    }
+    &_fz24 {
+        font-size: 24px;
+    }
+}
+
+.description {
+    color: $thin-gray;
+    font-weight: 300;
+    &_fz21 {
+        font-size: 21px;
+        line-height: 32px;
+    }
+    &_fz18 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    &_fz16 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}

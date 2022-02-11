@@ -1,0 +1,33 @@
+.promo {
+    // background: $background-color;
+    position: relative;
+    padding-top: 186px;
+    &__wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 445px);
+        grid-template-rows: repeat(3, auto);
+        z-index: 1;
+    }
+    &__descr {
+        margin-top: 25px;
+    }
+    &__btn {
+        margin-top: 40px;
+    }
+    &__bg {
+        img {
+            position: absolute;
+            left: calc(64% + 5px);
+            transform: translateX(-50%);
+            top: 84px;
+        }
+
+    }
+    &__dots {
+        position: absolute;
+        top: 59px;
+        left: 0;
+        transform: translateX(-40%);
+    }
+}

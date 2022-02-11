@@ -1,0 +1,41 @@
+.mobile {
+    padding-top: 297px;
+    padding-left: 88px;
+    position: relative;
+
+    &__wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 445px);
+        grid-template-rows: repeat(3, auto);
+        z-index: 1;
+    }
+    &__title {
+        width: 254px;
+        font-size: 35px;
+        line-height: 48px;
+        letter-spacing: 0.1px;
+        font-weight: 900;
+    }
+    &__divider {
+        margin-top: 30px;
+    }
+
+    &__descr {
+        margin-top: 31px;
+    }
+
+    &__btn {
+        margin-top: 40px;
+    }
+
+    &__bg {
+        img {
+            position: absolute;
+            right: 164px;
+            top: 261px;
+        }
+
+    }
+
+}

@@ -2,11 +2,17 @@
     color: #000000;
     font-weight: 700;
     line-height: 56px;
+    margin-bottom: 0;
     &_fz48 {
         font-size: 48px;
     }
     &_fz36 {
         font-size: 36px;
+    }
+    &_white {
+        font-size: 36px;
+        line-height: 48px;
+        color: #fff;
     }
     &_fz24 {
         font-size: 24px;
@@ -16,11 +22,13 @@
 .description {
     color: $thin-gray;
     font-weight: 300;
+    margin-bottom: 0;
     &_fz21 {
         font-size: 21px;
         line-height: 32px;
     }
     &_fz18 {
+        margin-top: 31px;
         font-size: 18px;
         line-height: 30px;
     }

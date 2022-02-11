@@ -1,0 +1,37 @@
+.leading {
+    position: relative;
+    padding-top: 277px;
+
+    &__wrapper {
+        padding-right: 32px;
+        position: relative;
+        display: grid;
+        justify-content: flex-end;
+        grid-template-columns: repeat(1, 445px);
+        grid-template-rows: repeat(3, auto);
+        z-index: 1;
+    }
+
+    &__descr {
+        width: 450px;
+    }
+
+    &__btn {
+        margin-top: 40px;
+    }
+
+    &__bg {
+        img {
+            position: absolute;
+            left: 135px;
+            top: 220px;
+        }
+    }
+
+    &__dots {
+        position: absolute;
+        top: 686px;
+        right: 0;
+        transform: translateX(40%);
+    }
+}

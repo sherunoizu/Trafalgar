@@ -1,5 +1,5 @@
 @import 'libs/bootstrap-reboot.min';
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;900&display=swap');
 @import 'base/variables';
 @import 'base/mixins';
 
@@ -19,7 +19,13 @@
     height: 3px;
     background-color: #000;
     border-radius: 5px;
-    margin: 26px auto 0 auto
+    margin: 26px auto 0 auto;
+    &_left {
+        margin: 26px 0 0 0;
+    }
+    &_white {
+        background-color: #fff;
+    }
 }
 
 
@@ -29,4 +35,7 @@
 @import 'blocks/buttons';
 @import 'blocks/promo';
 @import 'blocks/services';
+@import 'blocks/leading';
+@import 'blocks/mobile';
+@import 'blocks/feedback';
 

@@ -22,4 +22,31 @@
             color: $blue;
         }
     }
+    &-prev,
+    &-next {
+        position: absolute;
+        margin-top: 44px;
+        transition: all .3s;
+        left: 415px;
+        border: none;
+        background-color: #fff;
+        &:disabled {
+            svg {
+                path{
+                    fill: hsl(215, 85%, 73%);
+                }  
+            }
+            &:hover {
+                transform: scale(1);
+            }
+        }
+        &:hover {
+            transform: scale(1.2);
+        }
+        
+    }
+    &-next {
+        left: 720px;
+    }
 }
+

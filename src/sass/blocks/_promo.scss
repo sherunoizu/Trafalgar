@@ -18,16 +18,14 @@
     &__bg {
         img {
             position: absolute;
-            left: calc(64% + 5px);
-            transform: translateX(-50%);
-            top: 84px;
+            left: 554px;
+            top: -106px;
         }
 
     }
     &__dots {
         position: absolute;
-        top: 59px;
-        left: 0;
-        transform: translateX(-40%);
+        top: -123px;
+        left: -240px;
     }
 }

@@ -27,6 +27,11 @@
         padding: 54px 45px 46px 37px;
         display: grid;
         grid-template-rows: 92px auto auto;
+        transition: all .5s;
+        &:hover {
+            box-shadow: 10px 10px 50px $blue;
+            transform: scale(1.05);
+        }
         &__img {
             height: 92px;
         }
@@ -43,14 +48,14 @@
 
     &__bg {
         position: absolute;
-        top: 536px;
-        left: 35px;
+        top: 214px;
+        left: -368px;
         z-index: -1;
     }
     &__dots {
         position: absolute;
-        top: 869px;
-        left: 1395px;
+        top: 545px;
+        right: 0;
         z-index: 1;
     }
 }

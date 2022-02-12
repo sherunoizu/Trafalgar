@@ -1,12 +1,13 @@
 .feedback {
     padding-top: 289px;
+    padding-bottom: 62px;
     &__wrapper {
         margin: 0 50px 0 50px ;
         padding: 64px 118px 89px 118px;
         background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
         border-radius: 24px;
         display: grid;
-        grid-template-rows: 75px 140px;
+        grid-template-rows: 75px auto;
         row-gap: 70px;
         
     }
@@ -15,6 +16,8 @@
         text-align: center;
     }
     &__content {
+        margin-top: 10px;
+        
         display: grid;
         grid-template-columns: 355px 420px ;
         justify-content: space-between;
@@ -22,6 +25,7 @@
     &-person {
         position: relative;
         display: grid;
+        height: 130px;
         grid-template-columns: 140px 215px;
         column-gap: 30px;
         align-items: center;
@@ -47,6 +51,7 @@
             border-radius: 100%;
             background: #fff;
             z-index: 10;
+            box-shadow: 2px 2px 10px $thin-gray;
         }
         &__img {
             width: 130px;
@@ -57,6 +62,7 @@
         }
         &__comment {
             padding-top: 10px;
+            padding-right: 10px;
             font-size: 19px;
             line-height: 30px;
             font-weight: 400;
@@ -69,7 +75,7 @@
         &_left {
             position: absolute;
             top: -154px;
-            left: -25px;
+            left: 0;
         }
         &_right {
             position: absolute;
@@ -77,4 +83,13 @@
             right: 0;
         }
     }
+}
+
+.slider-track {
+    display: flex;
+    transition: all .4s;
+}
+.slider-container {
+    width: 880px;
+    overflow: hidden;
 }

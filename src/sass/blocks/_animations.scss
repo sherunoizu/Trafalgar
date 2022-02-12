@@ -1,0 +1,11 @@
+@keyframes read-more {
+    from {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

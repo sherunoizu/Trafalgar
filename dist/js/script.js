@@ -1,6 +1,7 @@
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
       overlay = document.querySelector('.menu__overlay'),
+      menuLink = document.querySelectorAll('.menu__link')
       closeElem = document.querySelector('.menu__close');
 
 hamburger.addEventListener('click', () => { 
@@ -13,6 +14,16 @@ closeElem.addEventListener('click', () => {
 
 overlay.addEventListener('click', () => { 
     menu.classList.remove('active');
+});
+
+function hideMenu () {
+    menu.classList.remove('active');
+}
+
+
+//hamburger menu hide delay
+menuLink.forEach((item) => {
+    item.addEventListener ('click', () => setTimeout(hideMenu, 200));
 });
 
 

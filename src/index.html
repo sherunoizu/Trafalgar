@@ -12,7 +12,13 @@
 </head>
 <body>
     <header class="header">
+        
         <div class="container">
+            <div class="hamburger">
+                <span class="hamburger_active"></span>
+                <span class="hamburger_active"></span>
+                <span class="hamburger_active"></span>
+            </div>
             <div class="header__wrapper">
                 <div class="header__logo">
                     <svg width="160" height="41" viewBox="0 0 160 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,26 +32,50 @@
 
                 <ul class="header__menu">
                     <li class="header__menu-item">
-                        <a href="#" class="header__link active">Home</a>
+                        <a href="#home" class="header__link active">Home</a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="#" class="header__link">Find a doctor</a>
+                        <a href="#find-a-doctor" class="header__link">Find a doctor</a>
                     </li>
                     <li class="header__menu__item">
-                        <a href="#" class="header__link">Apps</a>
+                        <a href="#mobile" class="header__link">Apps</a>
                     </li>
                     <li class="header__menu__item">
-                        <a href="#" class="header__link">Testimonials</a>
+                        <a href="#feedback" class="header__link">Testimonials</a>
                     </li>
                     <li class="header__menu__item">
-                        <a href="#" class="header__link">About us</a>
+                        <a href="#check-out" class="header__link">About us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <section class="promo">
+    <div class="menu">
+        <div class="menu__block">
+            <div class="menu__close">
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z"
+                        fill="black" />
+                </svg>
+            </div>
+
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__link"><a href="#home">Home</a></li>
+                    <li class="menu__link"><a href="#find-a-doctor">Find a doctor</a></li>
+                    <li class="menu__link"><a href="#mobile">Apps</a></li>
+                    <li class="menu__link"><a href="#feedback">Testimonials</a></li>
+                    <li class="menu__link"><a href="#check-out">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu__overlay"></div>
+    </div>
+
+    <section class="promo" id="home">
+        
         <div class="container">
             <div class="promo__wrapper">
                 <h1 class="title title_fz48">Virtual healthcare for you</h1>
@@ -66,7 +96,7 @@
 
     <section class="services">
         <div class="container">
-            <h2 class="services__title title title_fz36">Our services</h2>
+            <h2 id="find-a-doctor" class="services__title title title_fz36">Our services</h2>
             <div class="divider"></div>
             <p class="services__descr description description_fz18">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
 
@@ -131,7 +161,7 @@
     <section class="leading">
         <div class="container">
             <div class="leading__wrapper">
-                <h2 class="title title_fz36">Leading healthcare providers</h2>
+                <h2 class="title title_fz36">Leading healthcare <br> providers</h2>
                 <div class="divider divider_left"></div>
                 <div class="leading__descr">
                     <p class="description description_fz18">Trafalgar provides progressive, and affordable healthcare, it’s not just work. We take pride in the solutions we deliver</p>
@@ -148,7 +178,7 @@
         
     </section>
 
-    <section class="mobile">
+    <section class="mobile" id="mobile">
         <div class="container">
             <div class="mobile__wrapper">
                 <h2 class="mobile__title title">Download our
@@ -166,7 +196,7 @@
         
     </section>
 
-    <section class="feedback">
+    <section class="feedback" id="feedback">
         <div class="container">
             <div class="feedback__wrapper">
                 <div>
@@ -219,13 +249,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="slider-item">3</div>
-                        <div class="slider-item">4</div>
-                        <div class="slider-item">5</div>
-                        <div class="slider-item">6</div>
-                        <div class="slider-item">7</div>
-                        <div class="slider-item">8</div>
-                        <div class="slider-item">9</div> -->
+                        
                     </div>
                 </div> 
             </div>
@@ -256,7 +280,7 @@
         </div>
     </section>
 
-    <section class="check-out">
+    <section class="check-out" id="check-out">
         <div class="container">
             <h2 class="check-out__title title title_fz36">Check out our latest article</h2>
             <div class="mobile__divider divider"></div>
@@ -299,10 +323,15 @@
             </div>
 
             <div class="check-out__btn btn">View All</div>
+
+            <picture class="check-out__bg">
+                <img src="img/BG/check-out_bg.svg" alt="drop">
+            </picture>
+
         </div>
     </section>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__col">
@@ -371,8 +400,10 @@
 
             </div>
         </div>
-    </footer>
+    </footer> -->
     
     <script src="js/script.js"></script>
+
+    
 </body>
 </html>

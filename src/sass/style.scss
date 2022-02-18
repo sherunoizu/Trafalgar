@@ -3,6 +3,8 @@
 @import 'base/variables';
 @import 'base/mixins';
 
+
+
 * {
     font-family: 'Mulish', sans-serif;
     margin: 0;
@@ -32,6 +34,7 @@
 
 @import 'blocks/animations';
 @import 'blocks/header';
+@import 'blocks/menu';
 @import 'blocks/titltes';
 @import 'blocks/buttons';
 @import 'blocks/promo';
@@ -41,4 +44,5 @@
 @import 'blocks/feedback';
 @import 'blocks/check-out';
 @import 'blocks/footer';
+@import 'blocks/media';
 

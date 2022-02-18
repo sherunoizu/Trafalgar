@@ -5,7 +5,7 @@
     &__wrapper {
         position: relative;
         display: grid;
-        grid-template-columns: repeat(1, 445px);
+        grid-template-columns: 445px;
         grid-template-rows: repeat(3, auto);
         z-index: 1;
     }

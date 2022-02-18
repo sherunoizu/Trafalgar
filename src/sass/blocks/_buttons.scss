@@ -22,9 +22,9 @@
             color: $blue;
         }
     }
+    
     &-prev,
     &-next {
-        position: absolute;
         margin-top: 44px;
         transition: all .3s;
         left: 415px;

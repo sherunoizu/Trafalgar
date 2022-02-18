@@ -18,8 +18,7 @@
     &__content {
         margin-top: 10px;
         display: grid;
-        // width: 900px;
-        grid-template-columns: 355px 420px ;
+        grid-template-columns: repeat(2, auto) ;
         justify-content: space-between;
     }
     &-person {
@@ -63,6 +62,7 @@
         &__comment {
             padding-top: 10px;
             padding-right: 10px;
+            padding-left: 20px;
             font-size: 19px;
             line-height: 30px;
             font-weight: 400;
@@ -90,9 +90,15 @@
     transition: all .4s;
 }
 .slider-container {
-    width: 880px;
+    width: 895px;
     overflow: hidden;
 }
 .slider-item {
     margin-right: 10px;
+}
+
+.slider-buttons {
+    padding: 0 35%;
+    display: flex;
+    justify-content: space-between;
 }

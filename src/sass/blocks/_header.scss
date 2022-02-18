@@ -1,6 +1,7 @@
 .header {
     background: $background-color;
     padding-top: 79px;
+    
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -25,6 +26,7 @@
         opacity: .5;
         font-size: 18px;
         line-height: 23px;
+        transition: all 0.4s;
 
         &:hover {
             text-decoration: none;

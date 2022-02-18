@@ -15,9 +15,9 @@
         padding: 80px 50px 0 50px;
         display: grid;
         grid-template-columns: repeat(auto-fit, 350px);
-        column-gap: 34px;
         grid-template-rows: repeat(auto-fit, 355px);
         row-gap: 37px;
+        justify-content: space-between;
     }
     &-item {
         z-index: 10;
@@ -29,8 +29,8 @@
         grid-template-rows: 92px auto auto;
         transition: all .5s;
         &:hover {
-            box-shadow: 10px 10px 50px $blue;
-            transform: scale(1.05);
+            box-shadow: 10px 10px 40px $box-shadow-cards;
+            transform: scale(1.03);
         }
         &__img {
             height: 92px;

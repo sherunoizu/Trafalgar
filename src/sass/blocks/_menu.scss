@@ -1,0 +1,109 @@
+.hamburger {
+    visibility: hidden;
+    position: absolute;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+
+    &:hover {
+        .hamburger_active {
+            &:nth-child(1) {
+                transform: translateY(-1px) rotate(20deg);
+            }
+
+            &:nth-child(3) {
+                transform: translateY(1px) rotate(-20deg);
+            }
+        }
+    }
+
+    span {
+        display: block;
+        transition: all 0.6s;
+        width: 30px;
+        height: 4px;
+        border-radius: 15px;
+        background: $blue;
+
+        &:nth-child(2) {
+            width: 36px;
+        }
+    }
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+
+    &.active {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__block {
+        padding-top: 140px;
+        padding-left: 40px;
+        position: relative;
+        width: 345px;
+        background-color: $blue;
+        height: 100%;
+        transition: all 0.6s;
+        z-index: 10;
+        border-radius: 8px;
+    }
+
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        svg {
+            path {
+                fill: white;
+            }
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__link {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 15px;
+        position: relative;
+        text-transform: uppercase;
+        
+        a {
+            color: #fff;
+            position: relative;
+            text-decoration: none;
+            z-index: 2;
+
+        }
+    }
+
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.75;
+
+    }
+}

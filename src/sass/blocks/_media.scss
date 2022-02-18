@@ -476,7 +476,7 @@
             padding-right: 0;
             grid-template-columns: 1fr;
             h2 {
-                text-align: center;
+                text-align: left;
                 font-size: 30px;
                 line-height: 50px;
             }
@@ -500,15 +500,17 @@
         }
         &__descr{
             width: auto;
-            margin-top: 170px;
         }
         &__bg {
             img {
                 transform: translateX(-50%) scale(.4);
                 left: 50%;
-                top: -20px;
+                top: 220px;
                 
             }
+        }
+        &__btn {
+            margin-top: 220px;
         }
     }
 
@@ -547,7 +549,7 @@
             }
             &__name {
                 font-size: 21px;
-                line-height: 40px;
+                line-height: 30px;
             }
             &__comment {
                 padding-right: 0;
